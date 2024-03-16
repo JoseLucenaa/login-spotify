@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    transition: .4s;
+}
+
+body{
+    width: 100%;
+    height: 100vh;  
+}
+
+body a{
+    color: #1ed760;
+}
+
+body a:hover{
+    color: #1c9145;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+header img{
+    width: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.global{
+    width: 100%;
+    height: 100vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgb(12, 12, 12) 0%, rgb(40, 40, 40) 35%, rgb(83, 83, 83) 100%);  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 85%;
+    height: 465px;
+    background-color: rgb(12, 12, 12);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s1{
+    width: 50%;
+    height: 465px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px solid #1ed760;
+}
+
+.s1 h1{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 48px;
+    font-size: 40px;
+}
+
+span{
+    color: #1ed760;
+}
+
+
+.buttons button{
+    width: 324px;
+    height: 48px;
+    margin: 0px 0px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: transparent;
+    border: 1px solid rgb(93, 93, 93);
+    padding: 7px 31px;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    border: 1px solid rgb(255, 255, 255);
+    transform: scale(1.02);
+}
+
+.buttons button img{
+    width: 20px;
+}
+
+.text{
+    width: 250px;
+}
+
+.s2{
+    width: 50%;
+    height: 465px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.s2 p{
+    font-size: 15px;
+    padding: 0px 0px 8px;
+}
+
+input{
+    width: 324px;
+    height: 48px;
+    padding: 8px 14px;
+    background-color: rgb(12, 12, 12);
+    color: #1ed760;
+    border: 1px solid rgb(67, 67, 67);
+    border-radius: 8px;
+}
+
+input:hover{
+    border: 1px solid white;
+}
+.inputs{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.g1{
+    padding: 0px 0px 16px;
+}
+.checkbox-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#entrar{
+    width: 324px;
+    height: 48px;
+    padding: 8px 32px;
+    border-radius: 500px;
+    border: none;
+    background-color: #1ed760;
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#entrar:hover{
+    background-color: #167738;
+}
+
+.forgot-pass{
+    margin-bottom: 50px;
+}
+footer{
+    width: 100%;
+    height: 79px;
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins' sans-serif;
+}
+
+footer img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+
+@media screen and (max-width: 768px){
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        padding: 20px;
+        border-radius: 0;
+        border: none;
+    }
+
+
+    .s1 h1{
+        font-size: 35px;
+    }
+
+    .buttons a button{
+        width: 300px;
+        height: 38px;
+    }
+
+    .s1{
+        border-bottom: 1px solid #1ed760;
+        border-right: none;
+        padding: 30px 10px;
+        width: 100%;
+    }
+    
+    .s2{
+        width: 100%;
+        padding: 30px 10px;
+    }
+}
